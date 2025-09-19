@@ -8,6 +8,7 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+
   steps:
     - uses: actions/checkout@v1
     - name: Install Java
@@ -21,4 +22,4 @@ jobs:
         ./gradlew build -x test
     
     - name: Run tests
-        run: ./gradlew test
+      run: ./gradlew test
